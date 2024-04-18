@@ -14,12 +14,6 @@ export default {
     extend: {
       fontFamily: {
         Cardinal: ['"Cardinal Fruit"', "serif"],
-        CardinalClassic: ['"Cardinal Classic Long"', "serif"],
-        Montserrat: ['"Montserrat"', "sans-serif"],
-        Lora: ['"Lora"', "serif"],
-        Oswald: ["Oswald", 'sans-serif'],
-        Quattro: ["Quattrocento", 'serif'],
-        Cinzel: ["Cinzel", 'serif']
       },
       backgroundImage: {
         'dragonwht': "url('../images/bg.png')",

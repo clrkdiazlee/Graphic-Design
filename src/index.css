@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Cardinal Fruit";
+    src: url("../public/fonts/cardinal-fruit.ttf");
+  }
 
 @layer base {
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quattrocento:wght@400;700&display=swap');
-
     :root {
         --color-blk: 0 0 0;
         --color-wht: 255 255 255;
@@ -36,24 +36,6 @@
             --text-primary: 0 0 0;
             --text-secondary: 255 255 255;
         }
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-out {
-    100% {
-        opacity: 1;
-    }
-    0% {
-        opacity: 0;
     }
 }
 

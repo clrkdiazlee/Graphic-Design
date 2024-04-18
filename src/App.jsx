@@ -60,7 +60,7 @@ const App = () => {
     const handleScroll = (event) => {
       const container = containerRef.current;
       if (container) {
-        container.scrollLeft += event.deltaY;
+        container.scrollLeft += event.deltaY + 500;
       }
     };
 

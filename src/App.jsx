@@ -54,27 +54,15 @@ const App = () => {
     },
   ];
 
-  const containerRef = useRef(null);
+    const containerRef = useRef(null);
 
-  useEffect(() => {
     const handleScroll = (event) => {
       const container = containerRef.current;
       if (container) {
-        container.scrollLeft += event.deltaY + 3000;
+        container.scrollLeft += event.deltaY;
       }
     };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("wheel", handleScroll);
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener("wheel", handleScroll);
-      }
-    };
-  }, []);
+      
 
   return (
     <div
@@ -196,6 +184,7 @@ const App = () => {
           <div
             className={`w-[96%] inline-flex h-[36%] gap-2 overflow-x-scroll no-scrollbar border-x-blk border-x-[1px] laptop:w-[91%] scroll-smooth transition-all duration-700`}
             ref={containerRef}
+            onWheel={handleScroll}
           >
             {images.map((image, index) => (
               <img

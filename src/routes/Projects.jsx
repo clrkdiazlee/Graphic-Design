@@ -142,17 +142,12 @@ const Projects = () => {
               </button>
             )}
           </div>
-          <div className="flex absolute bottom-14 w-[97%] mr-12 laptop:ml-12 desktop:ml-25">
-            <div className="flex -rotate-90">
-              <img src="../icons/burger.svg" alt="" className="w-6" />
-              <button
-                className="text-lg whitespace-pre tablet:text-xl laptop:text-2xl text-blk transition-colors duration-700"
-                onClick={toggleMenu}
-              >
-                {isOpen ? " CLOSE" : " MENU"}
-              </button>
+          <div className='flex absolute bottom-14 iphone:bottom-9 w-[97%] mr-12 iphone:mr-6 laptop:ml-12 desktop:ml-25'>
+            <div className='flex -rotate-90'>
+                <img src="../icons/burger.svg" alt="" className='w-6'/>
+                <button className='text-lg whitespace-pre tablet:text-xl laptop:text-2xl text-blk transition-colors duration-700' onClick={toggleMenu}>{isOpen ? ' CLOSE' : ' MENU'}</button>
             </div>
-          </div>
+        </div>
         </div>
       :  
       <div className={`phone:flex-col laptop:flex-row h-screen w-screen font-Cardinal justify-center items-center ${isDark ? 'bg-dragonblk2' : 'bg-dragonwht'} bg-cover transition-all duration-700 gap-16 ${isOpen ? 'hidden' : 'flex'}`}>
@@ -207,12 +202,12 @@ const Projects = () => {
               isDark ? <button onClick={switchTheme} className='text-blk transition-colors duration-700 '>DARK</button> : <button onClick={switchTheme} className='text-blk transition-colors duration-700 opacity-45 '>DARK</button>
             }
           </div>
-        <div className='flex absolute bottom-14 w-[97%] mr-12 laptop:ml-12 desktop:ml-25'>
-          <div className='flex -rotate-90'>
-          <img src="../icons/burger.svg" alt="" className='w-6'/>
-          <button className='text-lg whitespace-pre tablet:text-xl laptop:text-2xl text-blk transition-colors duration-700' onClick={toggleMenu}>{isOpen ? ' CLOSE' : ' MENU'}</button>
+          <div className='flex absolute bottom-14 iphone:bottom-9 w-[97%] mr-12 iphone:mr-6 laptop:ml-12 desktop:ml-25'>
+            <div className='flex -rotate-90'>
+                <img src="../icons/burger.svg" alt="" className='w-6'/>
+                <button className='text-lg whitespace-pre tablet:text-xl laptop:text-2xl text-blk transition-colors duration-700' onClick={toggleMenu}>{isOpen ? ' CLOSE' : ' MENU'}</button>
+            </div>
         </div>
-          </div>
       </div> 
       }
     </div>

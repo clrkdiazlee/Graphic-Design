@@ -155,7 +155,7 @@ const Projects = () => {
           </div>
         </div>
       :  
-      <div className={`phone:flex-col laptop:flex-row h-screen w-screen font-Cardinal justify-center items-center ${isDark ? 'bg-dragonblk' : 'bg-dragonwht'} bg-cover transition-all duration-700 gap-16 ${isOpen ? 'hidden' : 'flex'}`}>
+      <div className={`phone:flex-col laptop:flex-row h-screen w-screen font-Cardinal justify-center items-center ${isDark ? 'bg-dragonblk2' : 'bg-dragonwht'} bg-cover transition-all duration-700 gap-16 ${isOpen ? 'hidden' : 'flex'}`}>
           <div className='absolute top-16 laptop:top-10 text-4xl leading-8 tracking-tighter tablet:text-5xl laptop:text-3xl text-blk transition-colors duration-700 desktop:text-4xl 1920:text-5xl 768:text-4xl'>
             <div>GRAPHIC</div>
             <div className='flex justify-end'>DESIGN</div>

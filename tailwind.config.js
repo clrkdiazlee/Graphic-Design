@@ -18,9 +18,11 @@ export default {
       backgroundImage: {
         'dragonwht': "url('../images/bg.png')",
         'dragonblk': "url('../images/bg-blk.png')",
+        'dragonblk2': "url('../images/bg-blk2.png')",
       },
     },
     screens: {
+      'iphone': '390px',
       'phone': '480px',
       'tablet': '640px',
       '768': '768px',

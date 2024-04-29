@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import useLocalStorage from "use-local-storage";
+import { useEffect, useState, useRef } from "react";
 
 const App = () => {
   const [isDark, setIsDark] = useState(localStorage.getItem('theme') == 'dark');
@@ -26,6 +25,10 @@ const App = () => {
     setIsOpen(!isOpen)
     fadeAnimation()
   }
+
+  useEffect(() => {
+    console.log(isDark)
+  }, [])
 
   const images = [
     {

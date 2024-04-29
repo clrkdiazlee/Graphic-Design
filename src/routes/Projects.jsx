@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProjectGallery from '../components/ProjectGallery';
 import { Link } from 'react-router-dom';
 import { Transition } from '@headlessui/react';
@@ -79,9 +79,8 @@ const Projects = () => {
   ]
 
   useEffect(() => {
-    console.log(Boolean(imageShown))
-  }, [imageShown])
-  
+    console.log(isDark)
+  }, [isDark])
 
   return (
     <div className='app overflow-x-hidden overflow-y-hidden whitespace-nowrap w-[100%] ' data-theme={localStorage.getItem('theme')}>
